@@ -20,8 +20,11 @@ new Vue({
 
 
 if (document.documentElement.clientWidth > 500) {
-    window.alert('请使用手机打开本页面，以保证浏览效果');
     const img = document.createElement('img');
-    img.src = '/1.png';
+    img.src = './1.png';
+    img.style.position = 'fixed';
+    img.style.left='50%';
+    img.style.top='50%';
+    img.style.transform='translate(-50%,-50%)';
     document.body.append(img);
 }
